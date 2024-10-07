@@ -60,5 +60,53 @@ const tovars = [
         price: "65 000", 
         id : "8"
     },
-    
+    {
+        img: "/assets/images/IMAGE (6).jpg",
+        title: "Тутқичли това Kukmara 4л шишали қопқоқ Granit ultra жго41а",
+        credit: "25 717 сўмдан / 24 ой",
+        price: "362 000", 
+        id : "9"
+    },
+    {
+        img: "/assets/images/IMAGE (7).jpg",
+        title: "Стол чироқ Baseus тунги чироқ DGAM B02",
+        credit: "13 142 сўмдан / 24 ой",
+        price: "185 000", 
+        id : "10"
+    },
+    {
+        img: "/assets/images/IMAGE (8).jpg",
+        title: "Galaxy A54 6/128Gb Оқ",
+        credit: "360 039 сўмдан / 24 ой",
+        price: "5 068 000", 
+        id : "11"
+    },
+    {
+        img: "/assets/images/IMAGE (9).jpg",
+        title: "Galaxy A34 6/128Gb Қора",
+        credit: "296 243 сўмдан / 24 ой",
+        price: "4 170 000", 
+        id : "12"
+    },
+    {
+        img: "/assets/images/IMAGE (10).jpg",
+        title: "Galaxy A54 8/256Gb Бинафша",
+        credit: "408 489 сўмдан / 24 ой",
+        price: "5 750 000", 
+        id : "13"
+    },
+    {
+        img: "/assets/images/IMAGE (11).jpg",
+        title: "Galaxy A54 6/128Gb Яшил",
+        credit: "360 039 сўмдан / 24 ой",
+        price: "5 068 000", 
+        id : "14"
+    },
+    {
+        img: "/assets/images/IMAGE (12).jpg",
+        title: "Аквафор Кристалл Н 2 Сув фильтри",
+        credit: "91 927 сўмдан / 24 ой",
+        price: "1 294 000", 
+        id : "15"
+    },
 ];
