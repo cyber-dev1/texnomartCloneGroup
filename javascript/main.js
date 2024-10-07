@@ -6,8 +6,7 @@ async function connectToMicrophone() {
     } catch (error) {
         throw new Error('Mikrofonga ulanishda xatolik: ' + error.message);
     }
-}
-
+};
 
 async function handleButtonClick() {
 
@@ -16,6 +15,6 @@ async function handleButtonClick() {
     } catch (error) {
        console.log(error.message);
     }
-}
+};
 
 document.getElementById('mic-button').addEventListener('click', handleButtonClick);
