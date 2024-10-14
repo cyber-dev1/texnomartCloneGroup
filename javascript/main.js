@@ -2,6 +2,8 @@ const elClimetList = document.querySelector(".js-climet-list");
 const elXitList = document.querySelector(".js-xit-list");
 const elColectionList = document.querySelector(".js-colection-list");
 const elTovarsTemp = document.querySelector(".js-tovars-temp").content;
+const elNewsList=document.querySelector(".js-news-list");
+const elNewsTemp=document.querySelector(".js-news-temp").content;
 const tovarsBasket = getItem("tovars_basket") ? JSON.parse(getItem("tovars_basket")) : [];
 const handleRenderTovarsFn = (arr, { climet, colection, xit }) => {
     if (climet && !(colection && xit)) elClimetList.innerHTML = "";
@@ -36,7 +38,18 @@ const handleRenderTovarsFn = (arr, { climet, colection, xit }) => {
 handleRenderTovarsFn(tovars.slice(0, 5), { climet: true, colection: false, xit: false });
 handleRenderTovarsFn(tovars.slice(5, 10), { climet: false, colection: false, xit: true });
 handleRenderTovarsFn(tovars.slice(10, 15), { climet: false, colection: true, xit: false });
-
+function handleRenderNews(arr) {
+    const docFragment = document.createDocumentFragment();
+    arr.forEach(({id,title,date,src})=>{
+       let clone =elNewsTemp.cloneNode(true);
+       clone.querySelector(".js-news-title").textContent= title;
+       clone.querySelector(".js-news-date").textContent= date;
+       clone.querySelector(".js-news-img").src= src;
+       docFragment.append(clone)
+    })
+    elNewsList.append(docFragment)
+}
+handleRenderNews(news)
 const handleClickFn = evt => {
     let evt_target = evt.target;
     if (evt_target.matches(".js-tovars-add-basket-btn") || evt_target.matches(".js-basket-icon")) {
