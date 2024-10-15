@@ -382,3 +382,31 @@ li:nth-child(3) a.headerTopLink {
   color: #575757;
   
 }
+.download-program-box{
+  width: 1426px;
+  height: 415px;
+  display: flex;
+  margin: auto;
+  border-radius: 16px;
+  justify-content: space-around;
+  background:  #F7F7F7;
+}
+.download-program-box .imgProg{
+  margin-top: -15px;
+}
+.download-program-box .qr-box{
+  width:420px ;
+  height: 113px;
+  display: flex;
+  justify-content: space-around;
+}
+.download-program-box .scaner-box p{
+  width:420px ;
+  height: 53px;
+  display: flex;
+  
+  justify-content: space-around;
+}
+.download-program-box .scaner-box {
+  margin-top: 100px;
+}
